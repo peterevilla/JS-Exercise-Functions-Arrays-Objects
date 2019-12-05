@@ -305,23 +305,11 @@ function getModelYears(inventory) {
 */
 function getOlderCars(inventory, year) {
   
-  var cars = [];
-    for(var i = 0; i < inventory.length; i++) {
-
-         if(inventory[i].car_year < year) {
-             cars[i] = inventory[i]
-             return cars;
-         } else {
-
-            cars;
-         }
-        
-            
-      }
+ 
   
   }
 
-  getOlderCars(inventory, 1964)
+  
 
 
 /**
