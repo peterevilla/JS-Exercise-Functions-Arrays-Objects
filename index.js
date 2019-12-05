@@ -194,10 +194,7 @@ function getCarInfoByIndex(Inventory, index) {
           
           return `This is a ${Inventory[i].car_make} ${Inventory[i].car_model}`
 
-        } else {
-
-          inventory;
-        }
+        } 
       } 
       
 }
@@ -337,12 +334,9 @@ function getGermanCars(inventory) {
     for(var i = 0; i < inventory.length; i++) {
 
          if(inventory[i].car_make === 'Audi' || inventory[i].car_make === 'Mercedes-Benz' || inventory[i].car_make === 'Volkswagen' || inventory[i].car_make === 'BMW') {
-             germans[i] = inventory[i]
+             germans.push(inventory[i]);
              
-         } else {
-
-            germans;
-         }
+         } 
         
       }
   
