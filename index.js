@@ -385,14 +385,15 @@ function carMaker(odo) {
   
   var carMade = { 
    odometer: odo,
-   drive: (dis) => (carMade.odometer = carMade.odometer + dis)
+   drive: function(dis) { 
+    carMade.odometer = carMade.odometer + dis;
+    return carMade.odometer}
   }
-      carMade.drive(50);
+      
       return carMade;
  }
  
- 
- carMaker(50);
+
 
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////
